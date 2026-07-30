@@ -10,37 +10,31 @@ const MOBILE_BREAKPOINT = 768;
 const cardData = [
   {
     color: '#060546',
-    title: 'Analytics',
     description: 'A focused single-page website that presents your business, services, contact details and call-to-action clearly.',
     label: 'One-page business websites'
   },
   {
     color: '#060546',
-    title: 'Dashboard',
     description: 'A larger website with separate pages for services, about, gallery, contact and other important information.',
     label: 'Multi-page websites'
   },
   {
     color: '#060546',
-    title: 'Collaboration',
     description: 'An upgrade of an existing website to improve the design, mobile layout, navigation and overall customer experience.',
     label: 'Website redesigns'
   },
   {
     color: '#060546',
-    title: 'Automation',
     description: 'Connecting the website to the client’s domain and publishing it through a suitable hosting provider.',
     label: 'Domain and hosting setup'
   },
   {
     color: '#060546',
-    title: 'Integration',
     description: 'Ongoing support for small content changes, image updates, backups and general website upkeep.',
     label: 'Website maintenance & support'
   },
   {
     color: '#060546',
-    title: 'Security',
     description: 'Professional logo creation or refinement to help a business present a clear, consistent and recognisable visual identity.',
     label: 'Logo design and redesign'
   }
@@ -88,7 +82,7 @@ const ParticleCard = ({
   particleCount = DEFAULT_PARTICLE_COUNT,
   glowColor = DEFAULT_GLOW_COLOR,
   enableTilt = true,
-  clickEffect = false,
+  clickEffect = true,
   enableMagnetism = false
 }) => {
   const cardRef = useRef(null);

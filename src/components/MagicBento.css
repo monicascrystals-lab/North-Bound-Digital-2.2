@@ -28,7 +28,9 @@
   position: relative;
   aspect-ratio: 4/3;
   min-height: 200px;
-  width: 100%;
+  /* width: 100%; */
+    width: 370px;
+  height: 200px;
   max-width: 100%;
   padding: 1.25em;
   border-radius: 20px;
@@ -127,22 +129,7 @@
 
 @media (min-width: 1024px) {
   .card-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .magic-bento-card:nth-child(3) {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-
-  .magic-bento-card:nth-child(4) {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
-  }
-
-  .magic-bento-card:nth-child(6) {
-    grid-column: 4;
-    grid-row: 3;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
