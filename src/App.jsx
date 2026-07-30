@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, lazy, Suspense } from 'react'
+import ErrorBoundary from './components/ErrorBoundary'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
@@ -9,7 +10,10 @@ import WhyChooseMe from './components/WhyChooseMe.jsx'
 import Reviews from './components/Reviews.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
-import logo from "./assets/Images/northbound-logo.png";
+const MagicBento = lazy(() =>
+  import('./components/MagicBento').then((mod) => ({ default: mod && mod.default ? mod.default : mod }))
+)
+import logo from "./assets/Images/North Bound Logo.png";
 import './App.css'
 
 function App() {
@@ -84,7 +88,11 @@ function App() {
       <main>
         <Hero logo={logo} />
         <About />
-        <Services />
+        <ErrorBoundary>
+          <Suspense fallback={null}>
+            <Services MagicBento={MagicBento} />
+          </Suspense>
+        </ErrorBoundary>
         <Process />
         <Portfolio />
         <WhyChooseMe />
