@@ -9,7 +9,7 @@ import WhyChooseMe from './components/WhyChooseMe.jsx'
 import Reviews from './components/Reviews.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
-import logo from "./assets/images/northbound-logo.png";
+import logo from "./assets/Images/northbound-logo.png";
 import './App.css'
 
 function App() {
