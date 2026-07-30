@@ -13,7 +13,7 @@ import Footer from './components/Footer.jsx'
 const MagicBento = lazy(() =>
   import('./components/MagicBento').then((mod) => ({ default: mod && mod.default ? mod.default : mod }))
 )
-import logo from "./assets/images/northbound-logo.png";
+import logo from "./assets/Images/North Bound Logo.png";
 import './App.css'
 
 function App() {

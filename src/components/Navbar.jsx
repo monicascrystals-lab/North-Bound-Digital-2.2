@@ -1,4 +1,5 @@
-function Navbar({ logo, isOpen, activeSection, hasScrolled, onToggleMenu, onLinkClick }) {
+import northboundLogo from "../assets/Images/North Bound Logo.png";
+function Navbar({ isOpen, activeSection, hasScrolled, onToggleMenu, onLinkClick }) {
   const navigation = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
@@ -12,14 +13,21 @@ function Navbar({ logo, isOpen, activeSection, hasScrolled, onToggleMenu, onLink
 
   return (
     <header className={`site-header ${hasScrolled ? 'scrolled' : ''}`}>
-      <div className="header-inner">
-        <a href="#home" className="brand-link" onClick={onLinkClick}>
-          <img src={logo} alt="Northbound Digital logo" className="brand-logo" />
-          <div className="brand-text">
-            <span className="brand-name">Northbound Digital</span>
-            <span className="brand-tagline">Websites built to move your business forward</span>
-          </div>
-        </a>
+<div className="header-inner">
+  <a href="#home" className="brand-link" onClick={onLinkClick}>
+    <img
+      src={northboundLogo}
+      alt="Northbound Digital logo"
+      className="brand-logo"
+    />
+
+    <div className="brand-text">
+      <span className="brand-name">Northbound Digital</span>
+      <span className="brand-tagline">
+        Websites built to move your business forward
+      </span>
+    </div>
+  </a>
 
         <button
           type="button"
