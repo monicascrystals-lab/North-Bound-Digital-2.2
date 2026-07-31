@@ -10,6 +10,7 @@ import WhyChooseMe from './components/WhyChooseMe.jsx'
 import Reviews from './components/Reviews.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import TargetCursor from "./components/TargetCursor";
 const MagicBento = lazy(() =>
   import('./components/MagicBento').then((mod) => ({ default: mod && mod.default ? mod.default : mod }))
 )
@@ -76,6 +77,7 @@ function App() {
 
   return (
     <div className="app-shell">
+      <TargetCursor />
       <Navbar
         logo={logo}
         isOpen={menuOpen}
