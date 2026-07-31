@@ -8,11 +8,11 @@ const portfolio = [
     url: '',
   },
   {
-    id: 'heart-herb',
-    name: 'Heart & Herb',
-    category: 'Health & Wellness',
+    id: 'green-haven',
+    name: 'Green Haven',
+    category: 'Retail',
     description:
-      'A calming brand presentation for a local wellness business with easy booking and professional service sections.',
+      'A calming brand presentation for a local plant-store business with easy booking and professional service sections.',
     url: '',
   },
   {
