@@ -1,4 +1,4 @@
-import northboundLogo from "../assets/Images/North Bound Logo.png";
+import northboundLogo from "../assets/Images/logo.png";
 function Navbar({ isOpen, activeSection, hasScrolled, onToggleMenu, onLinkClick }) {
   const navigation = [
     { id: 'home', label: 'Home' },
