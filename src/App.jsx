@@ -14,7 +14,7 @@ import TargetCursor from "./components/TargetCursor";
 const MagicBento = lazy(() =>
   import('./components/MagicBento').then((mod) => ({ default: mod && mod.default ? mod.default : mod }))
 )
-import logo from "./assets/Images/North Bound Logo.png";
+import logo from "./assets/Images/logo.png";
 import './App.css'
 
 function App() {

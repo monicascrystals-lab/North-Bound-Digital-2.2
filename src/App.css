@@ -281,7 +281,7 @@ textarea:focus-visible {
   position: relative;
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background: linear-gradient(180deg, #04203f 0%, #21568c 48%, #eef3f9 100%);
+  background: linear-gradient(180deg, #04083f 0%, #21568c 48%, #eef3f9 100%);
   overflow: hidden;
 }
 
@@ -308,12 +308,12 @@ textarea:focus-visible {
 }
 
 .hero-section .eyebrow {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgb(0, 0, 0);
 }
 
 .hero-section h1,
 .hero-section p {
-  color: white;
+  color: #06045c;
 }
 
 .hero-section h1 {
@@ -354,14 +354,14 @@ textarea:focus-visible {
 }
 
 .button-primary {
-  color: white;
+  color: #000000f3;
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
   box-shadow: 0 18px 36px rgba(33, 86, 140, 0.28);
 }
 
 .button-secondary {
   color: var(--color-heading);
-  background: rgba(255, 255, 255, 0.92);
+  background: #8d8994de;
 }
 
 .button-tertiary {
@@ -388,7 +388,7 @@ textarea:focus-visible {
   border-radius: 999px;
 }
 
-.hero-shape-circle {
+.hero-shape-triangle {
   width: 220px;
   height: 220px;
   background: rgba(188, 156, 99, 0.18);
@@ -427,7 +427,7 @@ textarea:focus-visible {
 .why-section,
 .reviews-section,
 .contact-section {
-  background: white;
+  background: rgba(10, 10, 14, 0.281);
   margin-top: -4rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--color-shadow);
@@ -447,7 +447,7 @@ textarea:focus-visible {
   align-items: center;
   justify-content: center;
   min-height: 18rem;
-  background: linear-gradient(135deg, rgba(71, 151, 201, 0.08), rgba(188, 156, 99, 0.08));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.966), rgba(188, 156, 99, 0.08));
   border-radius: var(--radius-lg);
 }
 
@@ -532,7 +532,7 @@ textarea:focus-visible {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
-  background: white;
+  background: rgba(74, 74, 77, 0.877);
   text-align: left;
 }
 
@@ -552,7 +552,7 @@ textarea:focus-visible {
   display: grid;
   place-items: center;
   font-weight: 700;
-  color: white;
+  color: rgb(15, 2, 61);
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
 }
 
