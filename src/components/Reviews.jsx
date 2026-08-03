@@ -6,7 +6,7 @@ function Reviews() {
       {/* Future React Bits reviews carousel can be added around these cards */}
       <div className="section-header">
         <p className="eyebrow">Reviews</p>
-        <h2>Placeholder testimonials for future reviews</h2>
+        <h2>Testimonials</h2>
         <p>
           These sample review cards show how a future carousel or animated review list can be
           presented on the website.
