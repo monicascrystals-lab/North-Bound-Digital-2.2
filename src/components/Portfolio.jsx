@@ -8,8 +8,7 @@ function Portfolio() {
         <p className="eyebrow">Portfolio</p>
         <h2>Selected website concepts for local businesses</h2>
         <p>
-          These placeholder projects show the style and layout direction that can be adapted for your
-          business website.
+          Every website I create is tailored to your business and your vision. From colours and fonts to layout, imagery, and features, each detail can be customised to reflect exactly what you have in mind.
         </p>
       </div>
 

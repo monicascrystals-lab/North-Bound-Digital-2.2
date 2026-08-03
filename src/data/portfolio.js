@@ -16,8 +16,9 @@ const portfolio = [
   {
     id: 'green-haven',
     name: 'Green Haven',
+    category: 'Retail',
     description:
-      'A calming brand presentation for a local plant-store business with easy booking and professional service sections.',
+      'A calming brand presentation for a local plant-store with a look into the and professional service sections.',
     image: greenhavenImage,
     url: '',
   },

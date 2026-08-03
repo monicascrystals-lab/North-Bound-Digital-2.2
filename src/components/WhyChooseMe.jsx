@@ -1,12 +1,12 @@
 const features = [
-  { id: 'design', label: 'Professional premium design', icon: '🎨' },
-  { id: 'mobile', label: 'Mobile-friendly websites', icon: '📱' },
-  { id: 'service', label: 'Personal service', icon: '🤝' },
-  { id: 'communication', label: 'Clear communication', icon: '💬' },
-  { id: 'pricing', label: 'Affordable pricing', icon: '💎' },
-  { id: 'speed', label: 'Fast turnaround', icon: '⚡' },
-  { id: 'support', label: 'Easy updates', icon: '🔧' },
-  { id: 'ongoing', label: 'Ongoing support', icon: '🛡️' },
+  { id: 'design', label: 'Professional premium design',},
+  { id: 'mobile', label: 'Mobile-friendly websites',},
+  { id: 'service', label: 'Personal service',},
+  { id: 'communication', label: 'Clear communication',},
+  { id: 'pricing', label: 'Affordable pricing',},
+  { id: 'speed', label: 'Fast turnaround',},
+  { id: 'support', label: 'Easy updates',},
+  { id: 'ongoing', label: 'Ongoing support',},
 ]
 
 function WhyChooseMe() {

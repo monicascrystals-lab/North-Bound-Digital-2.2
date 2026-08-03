@@ -117,7 +117,8 @@ textarea:focus-visible {
   gap: var(--space-lg);
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1rem 1.25rem;
+  padding: 0.5rem 0rem;
+  min-height: 70px;
 }
 
 .brand-link {
