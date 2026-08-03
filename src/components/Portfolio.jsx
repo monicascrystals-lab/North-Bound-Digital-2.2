@@ -16,10 +16,13 @@ function Portfolio() {
       <div className="portfolio-grid">
         {portfolio.map((project) => (
           <article key={project.id} className="portfolio-card">
-            <div className="portfolio-image" aria-hidden="true">
-              <span className="portfolio-image-label">Screenshot placeholder</span>
-              {/* Replace with a local screenshot image for {project.name} when ready */}
+            <div className="portfolio-image">
+  <img
+    src={project.image}
+    alt={`${project.name} website screenshot`}
+  />
             </div>
+            
             <div className="portfolio-copy">
               <h3>{project.name}</h3>
               <p className="portfolio-category">{project.category}</p>
