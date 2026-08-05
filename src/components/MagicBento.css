@@ -65,6 +65,7 @@
 
 .magic-bento-card__content {
   flex-direction: column;
+  justify-content: center;
 }
 
 .magic-bento-card__label {
@@ -86,6 +87,8 @@
 .magic-bento-card__description {
   font-size: 12px;
   line-height: 1.2;
+  margin-top: auto;
+  margin-bottom: auto;
   opacity: 0.9;
 }
 
