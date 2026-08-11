@@ -523,14 +523,14 @@ textarea:focus-visible {
 
 .process-step {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   align-items: start;
   width: 100%;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
-  background: rgba(74, 74, 77, 0.877);
+  background: rgba(44, 44, 44, 0.747);
   text-align: left;
 }
 
@@ -540,18 +540,18 @@ textarea:focus-visible {
 }
 
 .process-step.active {
-  background: rgba(71, 151, 201, 0.08);
+  background: rgba(20, 22, 24, 0.685);
 }
 
 .process-step-number {
   width: 3rem;
   height: 3rem;
   border-radius: 1rem;
-  display: grid;
+  display: none;
   place-items: center;
   font-weight: 700;
-  color: rgb(15, 2, 61);
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: rgba(6, 2, 20, 0.87);
+  background: #0e0e31b6;
 }
 
 .process-step-copy h3 {
@@ -838,4 +838,48 @@ textarea {
   .site-footer {
     padding: 2rem 1rem 2.5rem;
   }
+}
+.portfolio-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  overflow-y: auto;
+  padding: 40px 20px;
+}
+
+.portfolio-modal-content {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.portfolio-modal-content h2 {
+  margin-bottom: 25px;
+}
+
+.portfolio-modal-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.portfolio-modal-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.portfolio-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: 0;
+  background: transparent;
+  font-size: 36px;
+  cursor: pointer;
 }

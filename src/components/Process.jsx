@@ -3,27 +3,27 @@ import { useState } from 'react'
 const steps = [
   {
     id: 'consultation',
-    title: 'Consultation',
+    title: '1. Consultation',
     summary: 'We discuss your business, goals, audience, preferred style and the features your website needs.',
   },
   {
     id: 'design',
-    title: 'Design',
+    title: '2. Design',
     summary: 'I create the layout, colours, typography and visual direction for the website.',
   },
   {
     id: 'development',
-    title: 'Development',
+    title: '3. Development',
     summary: 'I build the website, add the content, images, responsive layout and interactive features.',
   },
   {
     id: 'review',
-    title: 'Review',
+    title: '4. Review',
     summary: 'You review the website and provide feedback before final changes are completed.',
   },
   {
     id: 'launch',
-    title: 'Launch',
+    title: '5. Launch',
     summary: 'Once approved, the website is tested, connected to hosting and published online.',
   },
 ]
