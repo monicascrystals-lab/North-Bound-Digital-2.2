@@ -1,3 +1,4 @@
+import SpecularButton from './SpecularButton'
 const features = [
   { id: 'design', label: 'Professional premium design',},
   { id: 'mobile', label: 'Mobile-friendly websites',},
@@ -23,12 +24,18 @@ function WhyChooseMe() {
 
       <div className="feature-grid">
         {features.map((feature) => (
-          <div key={feature.id} className="feature-card">
-            <span className="feature-icon" aria-hidden="true">
-              {feature.icon}
-            </span>
-            <p>{feature.label}</p>
-          </div>
+         <SpecularButton
+  key={feature.id}
+  className="feature-card"
+  size="lg"
+  radius={24}
+  textColor="#08203f"
+  lineColor="#ffffff"
+  baseColor="#dfe7f5"
+  autoAnimate={true}
+>
+  {feature.label}
+</SpecularButton>
         ))}
       </div>
     </section>
