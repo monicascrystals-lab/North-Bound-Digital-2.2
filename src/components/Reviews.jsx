@@ -5,11 +5,10 @@ function Reviews() {
     <section id="reviews" className="section reviews-section">
       {/* Future React Bits reviews carousel can be added around these cards */}
       <div className="section-header">
-        <p className="eyebrow">Reviews</p>
-        <h2>Testimonials</h2>
+        <p className="eyebrow">Designed to earn trust</p>
+        <h2>Strong local businesses deserve a strong online presence.</h2>
         <p>
-          These sample review cards show how a future carousel or animated review list can be
-          presented on the website.
+          Thoughtful, easy-to-use websites create the confidence that gets visitors to take the next step.
         </p>
       </div>
 

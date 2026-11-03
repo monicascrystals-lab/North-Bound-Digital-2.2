@@ -481,20 +481,6 @@ const MagicBento = ({
   const isMobile = useMobileDetection();
   const shouldDisableAnimations = disableAnimations || isMobile;
 
-  // Debug log to detect any object values being incorrectly passed into JSX
-  // (temporary - will remove once the issue is identified)
-  // eslint-disable-next-line no-console
-  console.log('MagicBento init', {
-    enableSpotlight,
-    enableBorderGlow,
-    disableAnimations,
-    shouldDisableAnimations,
-    spotlightRadius,
-    particleCount,
-    glowColor,
-    typeofGlow: typeof glowColor,
-  });
-
   return (
     <>
       {enableSpotlight && (

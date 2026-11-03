@@ -1,32 +1,32 @@
 function Hero({ logo }) {
   return (
     <section id="home" className="hero-section">
-      {/* Future React Bits animated background can be inserted inside this hero section */}
       <div className="hero-panel">
         <div className="hero-intro">
-          <img src={logo} alt="Northbound Digital logo" className="hero-logo" />
-          <p className="eyebrow">Premium web design for growing local businesses</p>
-          <h1>Premium websites designed to help small businesses stand out</h1>
+          <p className="eyebrow"><span />Independent web studio · Bloemfontein</p>
+          <h1>Websites that turn <em>local attention</em> into loyal customers.</h1>
           <p className="hero-copy">
-            Northbound Digital creates professional, responsive websites for small businesses that
-            want a confident online presence with elegant design and strong usability.
+            Northbound Digital builds distinct, high-performing websites for local businesses ready to look credible, get found and grow with confidence.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#contact">
-              Request a Website
+              Start your project <span aria-hidden="true">↗</span>
             </a>
             <a className="button button-secondary" href="#portfolio">
-              View My Work
+              Explore selected work <span aria-hidden="true">↓</span>
             </a>
           </div>
+          <div className="hero-proof" aria-label="Northbound Digital strengths">
+            <span>Made for mobile</span><span>Built with intention</span><span>Local, personal service</span>
+          </div>
         </div>
-      </div>
-
-      <div className="hero-visual" aria-hidden="true">
-        <span className="hero-shape hero-shape-circle" />
-        <span className="hero-shape hero-shape-ring" />
-        <span className="hero-shape hero-shape-wave" />
-        <span className="hero-shape hero-shape-dot" />
+        <div className="hero-art" aria-hidden="true">
+          <div className="orb orb-one" />
+          <div className="orb orb-two" />
+          <div className="orbit orbit-one" />
+          <div className="orbit orbit-two" />
+          <div className="hero-art-card"><img src={logo} alt="" /><span>01 / Northbound</span><strong>Built to move.</strong></div>
+        </div>
       </div>
     </section>
   )

@@ -1,5 +1,4 @@
-import { useEffect, useState, lazy, Suspense } from 'react'
-import ErrorBoundary from './components/ErrorBoundary'
+import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
@@ -10,17 +9,47 @@ import WhyChooseMe from './components/WhyChooseMe.jsx'
 import Reviews from './components/Reviews.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
-import TargetCursor from "./components/TargetCursor";
-const MagicBento = lazy(() =>
-  import('./components/MagicBento').then((mod) => ({ default: mod && mod.default ? mod.default : mod }))
-)
-import logo from "./assets/Images/logo.png";
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import TermsConditions from './pages/TermsConditions.jsx'
+import logo from './assets/Images/logo.png'
 import './App.css'
+import './gallery.css'
+
+const legalPages = {
+  '#privacy': PrivacyPolicy,
+  '#terms': TermsConditions,
+}
+
+function getLegalPage() {
+  return legalPages[window.location.hash] ?? null
+}
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
   const [hasScrolled, setHasScrolled] = useState(false)
+  const [LegalPage, setLegalPage] = useState(getLegalPage)
+
+  useEffect(() => {
+    const handleHashChange = () => setLegalPage(() => getLegalPage())
+
+    window.addEventListener('hashchange', handleHashChange)
+    return () => window.removeEventListener('hashchange', handleHashChange)
+  }, [])
+
+  useEffect(() => {
+    if (LegalPage) {
+      window.scrollTo({ top: 0 })
+      return
+    }
+
+    const sectionId = window.location.hash.slice(1)
+    if (!sectionId) return
+
+    requestAnimationFrame(() => {
+      document.getElementById(sectionId)?.scrollIntoView()
+    })
+  }, [LegalPage])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,7 +106,6 @@ function App() {
 
   return (
     <div className="app-shell">
-      <TargetCursor />
       <Navbar
         logo={logo}
         isOpen={menuOpen}
@@ -88,18 +116,20 @@ function App() {
       />
 
       <main>
-        <Hero logo={logo} />
-        <About />
-        <ErrorBoundary>
-          <Suspense fallback={null}>
-            <Services MagicBento={MagicBento} />
-          </Suspense>
-        </ErrorBoundary>
-        <Process />
-        <Portfolio />
-        <WhyChooseMe />
-        <Reviews />
-        <Contact />
+        {LegalPage ? (
+          <LegalPage />
+        ) : (
+          <>
+            <Hero logo={logo} />
+            <About />
+            <Services />
+            <Process />
+            <Portfolio />
+            <WhyChooseMe />
+            <Reviews />
+            <Contact />
+          </>
+        )}
       </main>
 
       <Footer />

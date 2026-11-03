@@ -14,7 +14,6 @@ class ErrorBoundary extends React.Component {
     // Log detailed error info to the console for diagnosis
     // This will surface the original stack and component stack
     // for the developer while keeping the UI from going blank.
-    // eslint-disable-next-line no-console
     console.error('ErrorBoundary caught an error:', error, info)
   }
 

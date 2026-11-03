@@ -8,6 +8,8 @@ const features = [
   { id: 'speed', label: 'Fast turnaround',},
   { id: 'support', label: 'Easy updates',},
   { id: 'ongoing', label: 'Ongoing support',},
+  { id: 'seo', label: 'SEO-friendly',},
+  { id: 'secure', label: 'Secure and reliable setup',},
 ]
 
 function WhyChooseMe() {

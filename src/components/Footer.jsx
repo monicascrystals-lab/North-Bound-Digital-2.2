@@ -4,7 +4,7 @@ function Footer() {
       <div className="footer-top">
         <div>
           <p className="eyebrow">Northbound Digital</p>
-          <p className="footer-tagline">Websites built to move your business forward</p>
+          <p className="footer-tagline">Websites that turn local attention into loyal customers.</p>
         </div>
 
         <div className="footer-links">
@@ -16,7 +16,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>Phone: 076 611 5666</p>
-        <p>Email: Northbounddigital@gmail.co.za</p>
+        <p>Email: info@northbounddigital.co.za</p>
         <p>WhatsApp: 076 611 5666</p>
         <p>Location: Bloemfontein, South Africa</p>
       </div>

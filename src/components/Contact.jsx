@@ -56,10 +56,10 @@ function Contact() {
   return (
     <section id="contact" className="section contact-section">
       <div className="section-header">
-        <p className="eyebrow">Contact</p>
-        <h2>Start your website project with Northbound Digital</h2>
+        <p className="eyebrow">Ready when you are</p>
+        <h2>Let’s make your next customer’s first impression count.</h2>
         <p>
-          Send a message to discuss your website needs, or use one of the direct contact links below.
+          Tell me what you need, where your business is headed and what is not working on your current site. I’ll come back with a clear next step.
         </p>
       </div>
 
@@ -77,7 +77,7 @@ function Contact() {
           </div>
           <div className="contact-card">
             <p className="contact-label">Email</p>
-            <a href="mailto:Northbounddigital@gmail.co.za">Northbounddigital@gmail.co.za</a>
+            <a href="mailto:info@northbounddigital.co.za">info@northbounddigital.co.za</a>
           </div>
           <div className="contact-card">
             <p className="contact-label">Location</p>
@@ -95,7 +95,7 @@ function Contact() {
             >
               WhatsApp Me
             </a>
-            <a className="button button-tertiary" href="mailto:Northbounddigital@gmail.co.za">
+            <a className="button button-tertiary" href="mailto:info@northbounddigital.co.za">
               Email Me
             </a>
           </div>

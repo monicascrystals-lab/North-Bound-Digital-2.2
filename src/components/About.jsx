@@ -3,17 +3,18 @@ function About() {
     <section id="about" className="section about-section">
       <div className="section-content">
         <div className="section-copy">
-          <p className="eyebrow">About the designer</p>
-          <h2>Professional websites for all types of businesses</h2>
+          <p className="eyebrow">The Northbound difference</p>
+          <h2>Built for the businesses people find, compare and choose every day.</h2>
           <p>
-          I create polished, mobile-friendly websites for small businesses that want to look trustworthy, professional and easy to use. Every website is designed to support your business goals with clean layout, strong hierarchy and thoughtful usability, creating a professional online presence that draws people in, builds trust and encourages them to learn more about your business.
+            Your website is often the first proof that your business is the right choice. I create polished, mobile-first websites that make that first impression count — with clear messaging, considered design and straightforward next steps.
           </p>
-          <p>
-            I believe every small business deserves a website that feels professional, trustworthy
-            and easy to use.
-          </p>
+          <a className="text-link" href="#contact">Let’s talk about your business <span aria-hidden="true">↗</span></a>
         </div>
-
+        <div className="about-metrics" aria-label="What Northbound Digital delivers">
+          <div><strong>01</strong><span>Clear strategy<br />before pixels</span></div>
+          <div><strong>02</strong><span>Responsive on<br />every screen</span></div>
+          <div><strong>03</strong><span>Support after<br />launch day</span></div>
+        </div>
       </div>
     </section>
   )

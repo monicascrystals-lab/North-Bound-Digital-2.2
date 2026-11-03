@@ -33,10 +33,9 @@ function Process() {
 
   return (
     <section id="process" className="section process-section">
-      {/* Future React Bits animated timeline can be added to the process step layout */}
       <div className="section-header">
-        <p className="eyebrow">Process</p>
-        <h2>How a Northbound Digital website comes together</h2>
+        <p className="eyebrow">A simple process</p>
+        <h2>Clear from first conversation to confident launch.</h2>
         <p>
           A straightforward process that keeps you involved, informed, and confident from first
           conversation to website launch.
@@ -59,7 +58,7 @@ function Process() {
                 }
               }}
             >
-              <span className="process-step-number">{index + 1}</span>
+              <span className="process-step-number">0{index + 1}</span>
               <div className="process-step-copy">
                 <h3>{step.title}</h3>
                 <p>{step.summary}</p>
